@@ -4,12 +4,79 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Wondar Quason', sans-serif;
 }
 
-.container {
+@font-face{
+    font-family: 'Wondar Quason';
+    src: url('./font/WondarQuasonFree.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} 
+body {
+    width:100vw;
+    height:100vh;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% 1fr 1fr 1fr;
+    margin: 0 auto;;
     width: 100vw;
     height: 100vh;
-    display: grid;
-    grid-template-rows: 200px 1fr 100px 100px 100px;
-    grid-template-columns: 1fr;
+    background-image:url(../images/fundo2.png);
+    background-size: cover;
 }
+
+header {
+    width: 100vw;
+    grid-area: 1 / 1 / 2 / 3;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    position: fixed;
+
+}
+
+header > img{
+    grid-area: 1 / 1 / 2 / 2;
+    width:100px;
+}
+
+i {
+    padding-right: 30px
+}
+.menu {
+    grid-area: 1 / 2 / 3 / 3;
+    position: ;
+    opacity: 0;
+    transform: translateY(50px);
+    pointer-events: none;
+    transition: opacity .5s ease, transform .4s ease;
+    display:flex;
+    flex-direction: column;
+    align-items:end;
+    margin-right: 30px
+}
+
+.menu a {
+    display: block;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    border-bottom: 1px solid  green;
+}
+
+.menu.open {
+    opacity: 1;
+    transform: translateY(100px);
+    pointer-events: auto;
+}
+
+
