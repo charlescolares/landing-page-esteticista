@@ -18,23 +18,13 @@
     --second-color:#7caeb7;
     --header-height:80px;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     width:100vw;
     height:100vh;
     font-family: 'Wondar Quason', sans-serif;
-}
-
-main {
-    padding-top:var(--header-height);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr 1fr 1fr;
-    margin: 0 auto;
-    width: 100vw;
-    min-height: 100vh;
-    background-image:url(../images/fundo2.png);
-    background-size: cover;
 }
 
 header {
@@ -52,44 +42,60 @@ header {
 }
 
 header > a > img{
-    grid-area: 1 / 1 / 2 / 2;
     width:100px;
 }
+main {
+    padding-top:var(--header-height);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr;
+    margin: 0 auto;
+    width: 100vw;
+    min-height: 100vh;
+    background-image:url(../images/fundo2.png);
+    background-size: cover;
+}
+
+
 
 i {
     padding-right: 30px
 }
-.menu {
-    grid-area: 1 / 2 / 3 / 3;
-    position: ;
+.nav {
+    
+    position: absolute;
+    right: 0;
+    top: var(--header-height);
+    display: flex;
+    flex-direction: column;
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(-10px);
     pointer-events: none;
     transition: opacity .5s ease, transform .4s ease;
-    display:flex;
-    flex-direction: column;
-    align-items:end;
-    margin-right: 30px;
+    padding-right: 30px;
+    text-align: right;
+    background-color: #f7bec2;
     
 }
 
-.menu a {
+.nav a {
     display: block;
     color: black;
     padding: 10px;
     text-decoration: none;
 }
 
-.menu a:hover {
+.nav a:hover {
     border-bottom: 1px solid  green;
 }
 
-.menu.open {
+.nav.open {
     opacity: 1;
-    transform: translateY(5px);
+    transform: translateY(0px);
     pointer-events: auto;
 }
 
+/*Hero Section*/
 
 .hero-intro {
     min-height: calc(100vh - var(--header-height));;
@@ -101,4 +107,12 @@ i {
 
 span {
     color: #7caeb7;
+}
+
+.hero-intro p {
+    padding-top: 10px;
+}
+
+.cta-button {
+    padding-top:30px;
 }

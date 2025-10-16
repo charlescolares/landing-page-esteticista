@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gabriela De Quadros — Esteticista e Cosmetóloga. Cuide da sua pele com atendimento profissional e personalizado. Agende pelo WhatsApp.">
     <title>Gabriela De Quadros - Esteticista e Cosmetóloga</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -11,20 +12,24 @@
 </head>
 <body>
 
-    <main class="container">
-
     <header>
-        <a href="#hero"><img src="images/logo1.png" alt="logo"></a>
+        <a href="#hero"><img src="images/logo1.png" alt="logo" class="logo"> </a>
         
-        <i id="burguer" class="material-symbols-outlined" onclick="document.querySelector('.menu').classList.toggle('open')">menu</i>
+        <i id="burguer" class="material-symbols-outlined"
+        aria-label="Abrir menu" 
+        role="button"
+        tabindex="0"
+        onclick="document.querySelector('.nav').classList.toggle('open')">menu</i>
 
     </header>
-    <menu class="menu">
+    <main class="container">
+
+    <nav class="nav">
         <a href="#hero">Início</a>
         <a href="">Sobre</a>
         <a href="">Depoimentos</a>
         <a href="">Contato</a>
-    </menu>
+    </nav>
 
     <section class="hero-intro" id="hero">
         <h1>Realce sua beleza <br> com um atendimento feito <span>especialmente para você</span></h1>
@@ -32,7 +37,7 @@
             Cuide da sua pele com técnicas profissionais, carinho e atenção — agende seu horário e viva essa experiência
         </p>
 
-        <a href="#">Agendar pelo WhatsApp</a>
+        <a href="#" target="_blank" class="cta-button" rel="noopener noreferrer">Agendar pelo WhatsApp</a>
 
     </section>
 
