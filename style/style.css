@@ -16,6 +16,7 @@
 :root {
     --primary-color:#f7bec2;
     --second-color:#7caeb7;
+    --accent-color: #55C579;
 }
 html {
     scroll-behavior: smooth;
@@ -26,6 +27,31 @@ body {
     height:100vh;
     font-family: 'Wondar Quason', sans-serif;
     
+}
+
+#whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--accent-color);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 28px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+#whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -54,8 +80,11 @@ main {
 .logo {
     grid-area: 1 / 1 / 2 / 1;
     width: 100%;
-    height:500px;
-    top: 0;
+}
+
+h1 {
+    padding: 10px;
+    color: rgb(44, 43, 43);
 }
 
 span {
@@ -63,11 +92,18 @@ span {
 }
 
 .hero-intro p {
-    padding-top: 10px;
+    padding: 30px;
 }
 
 .cta-button {
-    padding-top:30px;
+    background-color: var(--second-color);
+    text-decoration: none;
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 60px;
+    color: #f7bec2;
+    font-weight: bolder;
+    font-size: 1.4em;
 }
 
 
