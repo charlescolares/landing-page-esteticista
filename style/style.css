@@ -16,93 +16,47 @@
 :root {
     --primary-color:#f7bec2;
     --second-color:#7caeb7;
-    --header-height:80px;
 }
 html {
     scroll-behavior: smooth;
 }
+
 body {
-    width:100vw;
+    width:100%;
     height:100vh;
     font-family: 'Wondar Quason', sans-serif;
+    background-image:url(../images/fundo2.png);
 }
 
-header {
-    width: 100%;
-    height:var(--header-height);
-    grid-area: 1 / 1 / 2 / 3;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: white;
-    position: fixed;
-    top: 0;
-    z-index: 99;
-}
 
-header > a > img{
-    width:100px;
-}
 main {
-    padding-top:var(--header-height);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
     margin: 0 auto;
-    width: 100vw;
     min-height: 100vh;
-    background-image:url(../images/fundo2.png);
     background-size: cover;
-}
-
-
-
-i {
-    padding-right: 30px
-}
-.nav {
-    
-    position: absolute;
-    right: 0;
-    top: var(--header-height);
-    display: flex;
-    flex-direction: column;
-    opacity: 0;
-    transform: translateY(-10px);
-    pointer-events: none;
-    transition: opacity .5s ease, transform .4s ease;
-    padding-right: 30px;
-    text-align: right;
-    background-color: #f7bec2;
-    
-}
-
-.nav a {
-    display: block;
-    color: black;
-    padding: 10px;
-    text-decoration: none;
-}
-
-.nav a:hover {
-    border-bottom: 1px solid  green;
-}
-
-.nav.open {
-    opacity: 1;
-    transform: translateY(0px);
-    pointer-events: auto;
 }
 
 /*Hero Section*/
 
 .hero-intro {
-    min-height: calc(100vh - var(--header-height));;
-    margin-top: 30px;
-    grid-area: 2 / 1 / 3 / -1 ;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    grid-area: 1 / 1 / 2 / -1 ;
     padding: 10px;
     text-align: center;
+}
+
+.logo {
+    grid-area: 1 / 1 / 2 / 1;
+    width: 100%;
+    height:500px;
 }
 
 span {
@@ -115,4 +69,16 @@ span {
 
 .cta-button {
     padding-top:30px;
+}
+
+.servicos {
+    background-color: green;
+}
+
+.about-me {
+    background-color: red;
+}
+
+.outross {
+    
 }
