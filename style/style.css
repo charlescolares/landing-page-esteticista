@@ -26,7 +26,7 @@ body {
     width:100%;
     height:100vh;
     font-family: 'Wondar Quason', sans-serif;
-    
+    background-color: #f7bec2;
 }
 
 #whatsapp-float {
@@ -80,7 +80,6 @@ main {
 .logo {
     grid-area: 1 / 1 / 2 / 1;
     width: 100%;
-    height: 100%;
 }
 
 h1 {
