@@ -138,13 +138,13 @@ span {
 }
 
 .serv h3 {
-    font-size: large;
+    font-size: 1.8em;
     color: var(--primary-color);
     padding: 10px;
 }
 .servicos p {
-    text-align: center;
     text-align: justify;
+    font-size: 1.2em;
     padding: 10px;
 }
 
