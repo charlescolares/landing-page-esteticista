@@ -92,7 +92,7 @@ h1 {
 }
 
 span {
-    color: #7caeb7;
+    color: var(--second-color);
 }
 
 .hero-2 p {
@@ -119,6 +119,7 @@ span {
     align-items: center;
     justify-content: space-around;
     grid-area: 3 / 1 / 4 / -1;
+    background-image: linear-gradient(to bottom, white, var(--primary-color));
 }
 
 .serv {
