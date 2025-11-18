@@ -28,6 +28,33 @@ body {
     font-family: 'Wondar Quason', sans-serif;
 }
 
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    box-shadow: 2px 2px solid black;
+}
+
+nav#menu ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+
+nav#menu a {
+    text-decoration:none;
+    color: var(--second-color);
+    
+    padding: 12px 15px 5px ;
+    transition: border-bottom 5s, color 0.5s;
+}
+
+nav#menu a:hover {
+    border-bottom: .5px solid var(--second-color);
+    
+}
+
 #whatsapp-float {
     position: fixed;
     width: 60px;
@@ -55,10 +82,7 @@ body {
 
 
 main {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto 1fr 1fr auto;
-    min-height: 100vh;
+
 }
 
 /*Hero Section*/
