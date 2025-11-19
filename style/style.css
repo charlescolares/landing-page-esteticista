@@ -17,15 +17,13 @@
     --primary-color:#f7bec2;
     --second-color:#7caeb7;
     --accent-color: #55C579;
-}
-html {
-    scroll-behavior: smooth;
+    --fundo: #fff;
 }
 
+
 body {
-    width:100%;
-    height:100vh;
     font-family: 'Wondar Quason', sans-serif;
+    line-height: 1.5em;
 }
 
 header {
@@ -45,13 +43,14 @@ nav#menu ul {
 nav#menu a {
     text-decoration:none;
     color: var(--second-color);
-    
-    padding: 12px 15px 5px ;
-    transition: border-bottom 5s, color 0.5s;
+    border-radius: 5px;
+    padding: 8px 15px ;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 nav#menu a:hover {
-    border-bottom: .5px solid var(--second-color);
+    background-color: var(--second-color);
+    color: var(--fundo);
     
 }
 
@@ -82,16 +81,18 @@ nav#menu a:hover {
 
 
 main {
-
+    display: grid;
+    grid-template-columns: auto 90vw auto;
+    gap: 20px;
 }
 
 /*Hero Section*/
 
 .hero-intro {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    grid-area: 1 / 1 / 2 / -1 ;
+    grid-column: 2;
     min-height: 100vh;
 }
 
@@ -99,106 +100,14 @@ main {
     width: 100%;
 }
 
-.hero-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    grid-area: 2 / 1 / 3 / -1;
-}
-
-.img1,
-.img2, 
-img {
-    width: 100%;
-}
-
-.img2{
-    height: 100%;
-    order: 9;
-}
-
-.txt {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-h1 {
-    padding: 20px;
-    color: rgb(44, 43, 43);
-    font-size: 3em;
-}
-
-span {
-    color: var(--second-color);
-}
-
-.hero-2 p {
-    padding: 30px;
-    font-size: 1.5em;
-}
-
-.cta-button {
-    background-color: var(--accent-color);
-    text-decoration: none;
-    cursor: pointer;
-    padding: 20px 50px 20px 50px;
-    border-radius: 60px;
-    color: white;
-    font-weight: bolder;
-    font-size: 1.4em;
-}
-
 /*Servicos section*/
 
-.servicos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    grid-area: 3 / 1 / 4 / -1;
-}
 
-.serv {
-    background-color: white;
-    margin: 20px;
-    border-radius: 20px;
-}
 
-h2 {
-    color: rgb(44, 43, 43);
-    text-align: center;
-    font-size: 2em;
-    margin-top: 60px;
-    margin-bottom: 50px;
-    padding: 20px;
-}
 
-.fas{
-    margin: 20px;
-    padding: 10px;
-    scale: 2.1;
-    color: var(--second-color);
-}
-
-.serv h3 {
-    font-size: 1.8em;
-    color: var(--second-color);
-    padding: 10px;
-}
-.servicos p {
-    text-align: justify;
-    font-size: 1.2em;
-    padding: 10px;
-}
 
 
 /*About-me section*/
-
-.about-me {
-    border: 2px solid orange;
-    grid-area: 4 / 1 / 5 / -1;
-}
 
 
 
@@ -206,9 +115,10 @@ h2 {
 
 /*Footer*/
 
-footer{
-    background-color: brown;
-    grid-area: 5 / 1 / 5 / -1;
+footer {
+    color: var(--second-color);
+    text-align: center;
+    padding: 15px;
 }
 
 /* Animação de Fade-in para Elementos (usada com JS) */
