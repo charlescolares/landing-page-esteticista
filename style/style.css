@@ -88,7 +88,7 @@ main {
 
 /*Hero Section*/
 
-.hero-intro {
+#hero{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,16 +100,61 @@ main {
     width: 100%;
 }
 
-/*Servicos section*/
+/*home*/
+
+#home {
+    grid-column: 2;
+    background-image: linear-gradient(to bottom, white, var(--primary-color));
+}
+
+.title {
+    text-align: center;
+    font-size: 2em;
+    line-height: 1.3em;
+    padding: 20px;
+    
+}
 
 
+.image {
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.image img {
+    align-content: flex-end;
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20% 0% 0%;
+}
+
+.paragrafo2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
 
+#atendimento {
+    grid-column: 2;
+}
+
+#servicos{
+    grid-column: 2;
+}
 
 
-/*About-me section*/
+#about{
+    grid-column: 2;
+}
 
 
+#cta{
+    grid-column: 2;
+}
 
 
 
