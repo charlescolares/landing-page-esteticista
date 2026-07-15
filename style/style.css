@@ -26,33 +26,6 @@ body {
     line-height: 1.5em;
 }
 
-header {
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px;
-    box-shadow: 2px 2px solid black;
-}
-
-nav#menu ul {
-    display: flex;
-    list-style: none;
-    gap: 10px;
-}
-
-
-nav#menu a {
-    text-decoration:none;
-    color: var(--second-color);
-    border-radius: 5px;
-    padding: 8px 15px ;
-    transition: background-color 0.5s, color 0.5s;
-}
-
-nav#menu a:hover {
-    background-color: var(--second-color);
-    color: var(--fundo);
-    
-}
 
 #whatsapp-float {
     position: fixed;
@@ -101,81 +74,6 @@ main {
 }
 
 /*home*/
-
-#home {
-    grid-column: 2;
-    background-image: linear-gradient(to bottom, white, var(--primary-color));
-}
-
-.title {
-    text-align: center;
-    font-size: 2em;
-    line-height: 1.3em;
-    padding-bottom: 30px;
-    color: rgba(0, 0, 0, 0.753);
-}
-
-
-.image {
-    display: flex;
-    justify-content: flex-end;
-    overflow: hidden;
-}
-
-.image img {
-    width: 60%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20% 0% 0%;
-}
-
-.paragrafo{
-    display: flex;
-    align-content: flex-end;
-    justify-content: flex-end;
-    width: 50%;
-    background-color: var(--second-color);
-}
-
-#atendimento {
-    grid-column: 2;
-}
-
-#servicos{
-    grid-column: 2;
-}
-
-
-#about{
-    grid-column: 2;
-}
-
-
-#cta{
-    grid-column: 2;
-}
-
-
-
-/*Footer*/
-
-footer {
-    color: var(--second-color);
-    text-align: center;
-    padding: 15px;
-}
-
-/* Animação de Fade-in para Elementos (usada com JS) */
-.fade-in-on-scroll {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.fade-in-visible {
-    opacity: 1;
-    transform: translateY(0);
-}
 
 @keyframes fadeInLoad {
             from {
